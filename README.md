@@ -4,7 +4,7 @@
 https://starahmad6161.github.io/etisalat_task_2/
 
 ## firebase name
-etisalat-task-1 (etisalat-task-1)
+etisalat-task-2 (etisalat-task-2)
 
 
 ## Description
