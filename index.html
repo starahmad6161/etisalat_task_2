@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Task 2" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Task 2</title>
+</head>
+
+<body>
+
+
+    <!--Start upperBar-->
+    <div class="upperBar fixed-top py-3">
+        <div class="upperBar__container d-flex position-relative">
+            <img class="upperBar__logo mx-auto" src="./images/etisalat_sport.png" alt="Etisalat Sport">
+            <div class="upperBar__bell ml-auto d-flex rounded-circle pointer position-absolute">
+                <img class="upperBar__icon m-auto" src="./images/bell-solid.svg" alt="Bell">
+            </div>
+        </div>
+    </div>
+    <!--End upperBar-->
+
+    <!--Start navbar-->
+    <nav class="customNav py-2">
+        <div class="container">
+            <ul class="d-flex justify-content-between p-0 m-0 overflow-auto list-unstyled">
+                <li class="customNav__item flex-shrink-0 px-2 pointer d-flex flex-column dropdown">
+                    <button class="btn dropdown-toggle p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <svg class="customNav__icon d-block mx-auto mb-2" aria-hidden="true" focusable="false"
+                            data-prefix="fas" data-icon="futbol" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zm-48 0l-.003-.282-26.064 22.741-62.679-58.5 16.454-84.355 34.303 3.072c-24.889-34.216-60.004-60.089-100.709-73.141l13.651 31.939L256 139l-74.953-41.525 13.651-31.939c-40.631 13.028-75.78 38.87-100.709 73.141l34.565-3.073 16.192 84.355-62.678 58.5-26.064-22.741-.003.282c0 43.015 13.497 83.952 38.472 117.991l7.704-33.897 85.138 10.447 36.301 77.826-29.902 17.786c40.202 13.122 84.29 13.148 124.572 0l-29.902-17.786 36.301-77.826 85.138-10.447 7.704 33.897C442.503 339.952 456 299.015 456 256zm-248.102 69.571l-29.894-91.312L256 177.732l77.996 56.527-29.622 91.312h-96.476z">
+                            </path>
+                        </svg>
+                        <a class="customNav__link" href="#">كرة القدم</a>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="customNav__item flex-shrink-0 px-2 pointer d-flex flex-column">
+                    <svg class="customNav__icon d-block mx-auto mb-2" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="dumbbell" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 512">
+                        <path fill="currentColor"
+                            d="M104 96H56c-13.3 0-24 10.7-24 24v104H8c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h24v104c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm528 128h-24V120c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v272c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h24c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM456 32h-48c-13.3 0-24 10.7-24 24v168H256V56c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v400c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h128v168c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24z">
+                        </path>
+                    </svg>
+                    <a class="customNav__link" href="#">فيتنيس</a>
+                </li>
+                <li class="customNav__item flex-shrink-0 px-2 pointer d-flex flex-column">
+                    <svg class="customNav__icon d-block mx-auto mb-2" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="volleyball-ball" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M231.39 243.48a285.56 285.56 0 0 0-22.7-105.7c-90.8 42.4-157.5 122.4-180.3 216.8a249 249 0 0 0 56.9 81.1 333.87 333.87 0 0 1 146.1-192.2zm-36.9-134.4a284.23 284.23 0 0 0-57.4-70.7c-91 49.8-144.8 152.9-125 262.2 33.4-83.1 98.4-152 182.4-191.5zm187.6 165.1c8.6-99.8-27.3-197.5-97.5-264.4-14.7-1.7-51.6-5.5-98.9 8.5A333.87 333.87 0 0 1 279.19 241a285 285 0 0 0 102.9 33.18zm-124.7 9.5a286.33 286.33 0 0 0-80.2 72.6c82 57.3 184.5 75.1 277.5 47.8a247.15 247.15 0 0 0 42.2-89.9 336.1 336.1 0 0 1-80.9 10.4c-54.6-.1-108.9-14.1-158.6-40.9zm-98.3 99.7c-15.2 26-25.7 54.4-32.1 84.2a247.07 247.07 0 0 0 289-22.1c-112.9 16.1-203.3-24.8-256.9-62.1zm180.3-360.6c55.3 70.4 82.5 161.2 74.6 253.6a286.59 286.59 0 0 0 89.7-14.2c0-2 .3-4 .3-6 0-107.8-68.7-199.1-164.6-233.4z">
+                        </path>
+                    </svg>
+                    <a class="customNav__link" href="#">كرة يد</a>
+                </li>
+                <li class="customNav__item flex-shrink-0 px-2 pointer d-flex flex-column">
+                    <svg class="customNav__icon d-block mx-auto mb-2" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="baseball-ball" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512">
+                        <path fill="currentColor"
+                            d="M368.5 363.9l28.8-13.9c11.1 22.9 26 43.2 44.1 60.9 34-42.5 54.5-96.3 54.5-154.9 0-58.5-20.4-112.2-54.2-154.6-17.8 17.3-32.6 37.1-43.6 59.5l-28.7-14.1c12.8-26 30-49 50.8-69C375.6 34.7 315 8 248 8 181.1 8 120.5 34.6 75.9 77.7c20.7 19.9 37.9 42.9 50.7 68.8l-28.7 14.1c-11-22.3-25.7-42.1-43.5-59.4C20.4 143.7 0 197.4 0 256c0 58.6 20.4 112.3 54.4 154.7 18.2-17.7 33.2-38 44.3-61l28.8 13.9c-12.9 26.7-30.3 50.3-51.5 70.7 44.5 43.1 105.1 69.7 172 69.7 66.8 0 127.3-26.5 171.9-69.5-21.1-20.4-38.5-43.9-51.4-70.6zm-228.3-32l-30.5-9.8c14.9-46.4 12.7-93.8-.6-134l30.4-10c15 45.6 18 99.9.7 153.8zm216.3-153.4l30.4 10c-13.2 40.1-15.5 87.5-.6 134l-30.5 9.8c-17.3-54-14.3-108.3.7-153.8z">
+                        </path>
+                    </svg>
+                    <a class="customNav__link" href="#">تنس</a>
+                </li>
+                <li class="customNav__item flex-shrink-0 px-2 pointer d-flex flex-column">
+                    <svg class="customNav__icon d-block mx-auto mb-2" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="basketball-ball" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512">
+                        <path fill="currentColor"
+                            d="M212.3 10.3c-43.8 6.3-86.2 24.1-122.2 53.8l77.4 77.4c27.8-35.8 43.3-81.2 44.8-131.2zM248 222L405.9 64.1c-42.4-35-93.6-53.5-145.5-56.1-1.2 63.9-21.5 122.3-58.7 167.7L248 222zM56.1 98.1c-29.7 36-47.5 78.4-53.8 122.2 50-1.5 95.5-17 131.2-44.8L56.1 98.1zm272.2 204.2c45.3-37.1 103.7-57.4 167.7-58.7-2.6-51.9-21.1-103.1-56.1-145.5L282 256l46.3 46.3zM248 290L90.1 447.9c42.4 34.9 93.6 53.5 145.5 56.1 1.3-64 21.6-122.4 58.7-167.7L248 290zm191.9 123.9c29.7-36 47.5-78.4 53.8-122.2-50.1 1.6-95.5 17.1-131.2 44.8l77.4 77.4zM167.7 209.7C122.3 246.9 63.9 267.3 0 268.4c2.6 51.9 21.1 103.1 56.1 145.5L214 256l-46.3-46.3zm116 292c43.8-6.3 86.2-24.1 122.2-53.8l-77.4-77.4c-27.7 35.7-43.2 81.2-44.8 131.2z">
+                        </path>
+                    </svg>
+                    <a class="customNav__link" href="#">كرة سلة</a>
+                </li>
+                <li class="customNav__item flex-shrink-0 px-2 pointer d-flex flex-column">
+                    <svg class="customNav__icon d-block mx-auto mb-2" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="swimmer" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 512">
+                        <path fill="currentColor"
+                            d="M189.61 310.58c3.54 3.26 15.27 9.42 34.39 9.42s30.86-6.16 34.39-9.42c16.02-14.77 34.5-22.58 53.46-22.58h16.3c18.96 0 37.45 7.81 53.46 22.58 3.54 3.26 15.27 9.42 34.39 9.42s30.86-6.16 34.39-9.42c14.86-13.71 31.88-21.12 49.39-22.16l-112.84-80.6 18-12.86c3.64-2.58 8.28-3.52 12.62-2.61l100.35 21.53c25.91 5.53 51.44-10.97 57-36.88 5.55-25.92-10.95-51.44-36.88-57L437.68 98.47c-30.73-6.58-63.02.12-88.56 18.38l-80.02 57.17c-10.38 7.39-19.36 16.44-26.72 26.94L173.75 299c5.47 3.23 10.82 6.93 15.86 11.58zM624 352h-16c-26.04 0-45.8-8.42-56.09-17.9-8.9-8.21-19.66-14.1-31.77-14.1h-16.3c-12.11 0-22.87 5.89-31.77 14.1C461.8 343.58 442.04 352 416 352s-45.8-8.42-56.09-17.9c-8.9-8.21-19.66-14.1-31.77-14.1h-16.3c-12.11 0-22.87 5.89-31.77 14.1C269.8 343.58 250.04 352 224 352s-45.8-8.42-56.09-17.9c-8.9-8.21-19.66-14.1-31.77-14.1h-16.3c-12.11 0-22.87 5.89-31.77 14.1C77.8 343.58 58.04 352 32 352H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h16c38.62 0 72.72-12.19 96-31.84 23.28 19.66 57.38 31.84 96 31.84s72.72-12.19 96-31.84c23.28 19.66 57.38 31.84 96 31.84s72.72-12.19 96-31.84c23.28 19.66 57.38 31.84 96 31.84h16c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-512-96c44.18 0 80-35.82 80-80s-35.82-80-80-80-80 35.82-80 80 35.82 80 80 80z">
+                        </path>
+                    </svg>
+                    <a class="customNav__link" href="#">سباحة</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--End navbar-->
+
+
+    <!--Start hero-->
+    <div class="hero position-relative mt-3 mt-md-4 overflow-hidden">
+        <img class="hero__img w-100" src="./images/hero.jpg" alt="football">
+        <div class="hero__text px-3 py-2 py-md-3 text-right overflow-hidden w-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Soluta, nostrum.</div>
+    </div>
+    <!--End hero-->
+
+    <!--Start champ-->
+    <div class="champ my-4">
+        <div class="container">
+            <!--Tabs-->
+            <ul class="nav nav-tabs justify-content-between" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link pb-0" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                        aria-controls="home" aria-selected="true">
+                        الامس
+                        <small class="champ__date d-block">30 Sep</small>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link pb-0 active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                        aria-controls="profile" aria-selected="false">
+                        اليوم
+                        <small class="champ__date d-block">30 Sep</small>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link pb-0" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                        aria-controls="contact" aria-selected="false">
+                        غدا
+                        <small class="champ__date d-block">30 Sep</small>
+                    </a>
+                </li>
+            </ul>
+            <!--Tab Content-->
+            <div class="tab-content pb-3" id="myTabContent">
+                <!--Tab Content #1-->
+                <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h2 class="champ__title font-weight-bold text-center h5 my-4">بطولة الامم المتحدة</h2>
+                    <div class="row px-4">
+                        <div class="col-3 text-center">
+                            <img class="champ__flag mt-4" src="./images/eg_flag.png" alt="Egypt">
+                            <div class="mt-2">مصر</div>
+                        </div>
+                        <div class="col-6 text-center">
+                            <div class="champ__hint rounded-pill px-3 py-2">
+                                <span class="champ__circle d-inline-block rounded-circle"></span> لم تبدأ
+                            </div>
+                            <div class="champ__time mt-3">08:00 PM</div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <img class="champ__flag mt-4" src="./images/eg_flag.png" alt="Egypt">
+                            <div class="mt-2">مصر</div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="champ__info text-right">
+                                يعرض على ONS
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="champ__info text-left">
+                                الاستاد: القاهرة
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Tab Content #2-->
+                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <h2 class="champ__title font-weight-bold text-center h5 my-4">بطولة الامم المتحدة</h2>
+                    <div class="row px-4">
+                        <div class="col-3 text-center">
+                            <img class="champ__flag mt-4" src="./images/eg_flag.png" alt="Egypt">
+                            <div class="mt-2">مصر</div>
+                        </div>
+                        <div class="col-6 text-center">
+                            <div class="champ__hint rounded-pill px-3 py-2">
+                                <span class="champ__circle d-inline-block rounded-circle"></span> لم تبدأ
+                            </div>
+                            <div class="champ__time mt-3">08:00 PM</div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <img class="champ__flag mt-4" src="./images/eg_flag.png" alt="Egypt">
+                            <div class="mt-2">مصر</div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="champ__info text-right">
+                                يعرض على ONS
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="champ__info text-left">
+                                الاستاد: القاهرة
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Tab Content #3-->
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <h2 class="champ__title font-weight-bold text-center h5 my-4">بطولة الامم المتحدة</h2>
+                    <div class="row px-4">
+                        <div class="col-3 text-center">
+                            <img class="champ__flag mt-4" src="./images/eg_flag.png" alt="Egypt">
+                            <div class="mt-2">مصر</div>
+                        </div>
+                        <div class="col-6 text-center">
+                            <div class="champ__hint rounded-pill px-3 py-2">
+                                <span class="champ__circle d-inline-block rounded-circle"></span> لم تبدأ
+                            </div>
+                            <div class="champ__time mt-3">08:00 PM</div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <img class="champ__flag mt-4" src="./images/eg_flag.png" alt="Egypt">
+                            <div class="mt-2">مصر</div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="champ__info text-right">
+                                يعرض على ONS
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="champ__info text-left">
+                                الاستاد: القاهرة
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--See All Button-->
+            <a class="champ__btn h4 d-block py-4 text-center font-weight-600 mb-0" href="#">عرض كل البطولات</a>
+        </div>
+    </div>
+    <!--End champ-->
+
+    <!--Start champSlider-->
+    <div class="champSlider py-3 mb-4">
+        <div class="container">
+            <!--Header-->
+            <header class="row mb-3">
+                <h2 class="col-6 h5 text-right font-weight-600">البطولات</h2>
+                <div class="col-6">
+                    <a class="champSlider__more text-decoration-none" href="#">المزيد</a>
+                </div>
+            </header>
+            <!--Carousel-->
+            <div class="owl-carousel" dir="ltr">
+                <!--Item #1-->
+                <div class="champSlider__item px-3 py-2 text-right" dir="rtl">
+                    <div class="row justify-content-between">
+                        <div class="col-8">
+                            <h2 class="h5">بطولة الأمم الافريقية</h2>
+                            <h3 class="champSlider__title h6">المبارة القادمة</h3>
+                            <div class="d-flex align-items-center justify-content-between mt-3 px-2 px-md-4">
+                                <img class="champSlider__flag" src="./images/egypt.png" alt="Egypt">
+                                <div class="chamSlider__vs text-center">VS</div>
+                                <img class="champSlider__flag" src="./images/egypt.png" alt="Egypt">
+                            </div>
+                            <div class="d-flex justify-content-between mt-4 px-md-4">
+                                <div class="champSlider__time">
+                                    08:00 م
+                                </div>
+                                <div class="champSlider__time ml-3">
+                                    22/7/2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <img class="champSlider__leftImg my-auto" src="./images/CAF.png" alt="CAF">
+                        </div>
+                    </div>
+                </div>
+                <!--Item #2-->
+                <div class="champSlider__item px-3 py-2 text-right" dir="rtl">
+                    <div class="row justify-content-between">
+                        <div class="col-8">
+                            <h2 class="h5">بطولة الأمم الافريقية</h2>
+                            <h3 class="champSlider__title h6">المبارة القادمة</h3>
+                            <div class="d-flex align-items-center justify-content-between mt-3 px-2 px-md-4">
+                                <img class="champSlider__flag" src="./images/egypt.png" alt="Egypt">
+                                <div class="chamSlider__vs text-center">VS</div>
+                                <img class="champSlider__flag" src="./images/egypt.png" alt="Egypt">
+                            </div>
+                            <div class="d-flex justify-content-between mt-4 px-md-4">
+                                <div class="champSlider__time">
+                                    08:00 م
+                                </div>
+                                <div class="champSlider__time ml-3">
+                                    22/7/2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <img class="champSlider__leftImg my-auto" src="./images/CAF.png" alt="CAF">
+                        </div>
+                    </div>
+                </div>
+                <!--Item #3-->
+                <div class="champSlider__item px-3 py-2 text-right" dir="rtl">
+                    <div class="row justify-content-between">
+                        <div class="col-8">
+                            <h2 class="h5">بطولة الأمم الافريقية</h2>
+                            <h3 class="champSlider__title h6">المبارة القادمة</h3>
+                            <div class="d-flex align-items-center justify-content-between mt-3 px-2 px-md-4">
+                                <img class="champSlider__flag" src="./images/egypt.png" alt="Egypt">
+                                <div class="chamSlider__vs text-center">VS</div>
+                                <img class="champSlider__flag" src="./images/egypt.png" alt="Egypt">
+                            </div>
+                            <div class="d-flex justify-content-between mt-4 px-md-4">
+                                <div class="champSlider__time">
+                                    08:00 م
+                                </div>
+                                <div class="champSlider__time ml-3">
+                                    22/7/2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <img class="champSlider__leftImg my-auto" src="./images/CAF.png" alt="CAF">
+                        </div>
+                    </div>
+                </div>
+                <!--Item #4-->
+                <div class="champSlider__item px-3 py-2 text-right" dir="rtl">
+                    <div class="row justify-content-between">
+                        <div class="col-8">
+                            <h2 class="h5">بطولة الأمم الافريقية</h2>
+                            <h3 class="champSlider__title h6">المبارة القادمة</h3>
+                            <div class="d-flex align-items-center justify-content-between mt-3 px-2 px-md-4">
+                                <img class="champSlider__flag" src="./images/egypt.png" alt="Egypt">
+                                <div class="chamSlider__vs text-center">VS</div>
+                                <img class="champSlider__flag" src="./images/egypt.png" alt="Egypt">
+                            </div>
+                            <div class="d-flex justify-content-between mt-4 px-md-4">
+                                <div class="champSlider__time">
+                                    08:00 م
+                                </div>
+                                <div class="champSlider__time ml-3">
+                                    22/7/2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <img class="champSlider__leftImg my-auto" src="./images/CAF.png" alt="CAF">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End champSlider-->
+
+    <!--Start news-->
+    <section class="news py-3">
+        <div class="container">
+            <!--Header-->
+            <header class="row mb-3">
+                <h2 class="col-6 h5 text-right font-weight-600">الاخبار</h2>
+                <div class="col-6">
+                    <a class="news__more text-decoration-none" href="#">المزيد</a>
+                </div>
+            </header>
+            <!--Row #1-->
+            <div class="row mb-4">
+                <div class="col-10">
+                    <div class="media text-right">
+                        <img class="news__img align-self-stretch ml-1 rounded" src="./images/news.jpg" alt="news">
+                        <div class="media-body">
+                            <h5 class="mt-2 mb-4">بطولة الأمم الأفريقية</h5>
+                            <div class="d-flex justify-content-around">
+                                <div class="news__info px-1">مع شيماء</div>
+                                <div class="news__info px-1">30 اكتوبر 2020</div>
+                                <div class="news__info px-1">30 مشاهدة</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 d-flex">
+                    <svg class="news__like text-white my-auto" aria-hidden="true" focusable="false" data-prefix="far"
+                        data-icon="thumbs-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M466.27 286.69C475.04 271.84 480 256 480 236.85c0-44.015-37.218-85.58-85.82-85.58H357.7c4.92-12.81 8.85-28.13 8.85-46.54C366.55 31.936 328.86 0 271.28 0c-61.607 0-58.093 94.933-71.76 108.6-22.747 22.747-49.615 66.447-68.76 83.4H32c-17.673 0-32 14.327-32 32v240c0 17.673 14.327 32 32 32h64c14.893 0 27.408-10.174 30.978-23.95 44.509 1.001 75.06 39.94 177.802 39.94 7.22 0 15.22.01 22.22.01 77.117 0 111.986-39.423 112.94-95.33 13.319-18.425 20.299-43.122 17.34-66.99 9.854-18.452 13.664-40.343 8.99-62.99zm-61.75 53.83c12.56 21.13 1.26 49.41-13.94 57.57 7.7 48.78-17.608 65.9-53.12 65.9h-37.82c-71.639 0-118.029-37.82-171.64-37.82V240h10.92c28.36 0 67.98-70.89 94.54-97.46 28.36-28.36 18.91-75.63 37.82-94.54 47.27 0 47.27 32.98 47.27 56.73 0 39.17-28.36 56.72-28.36 94.54h103.99c21.11 0 37.73 18.91 37.82 37.82.09 18.9-12.82 37.81-22.27 37.81 13.489 14.555 16.371 45.236-5.21 65.62zM88 432c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <!--Row #2-->
+            <div class="row mb-4">
+                <div class="col-10">
+                    <div class="media text-right">
+                        <img class="news__img align-self-stretch ml-1 rounded" src="./images/news.jpg" alt="news">
+                        <div class="media-body">
+                            <h5 class="mt-2 mb-4">بطولة الأمم الأفريقية</h5>
+                            <div class="d-flex justify-content-around">
+                                <div class="news__info px-1">مع شيماء</div>
+                                <div class="news__info px-1">30 اكتوبر 2020</div>
+                                <div class="news__info px-1">30 مشاهدة</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 d-flex">
+                    <svg class="news__like text-white my-auto" aria-hidden="true" focusable="false" data-prefix="far"
+                        data-icon="thumbs-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M466.27 286.69C475.04 271.84 480 256 480 236.85c0-44.015-37.218-85.58-85.82-85.58H357.7c4.92-12.81 8.85-28.13 8.85-46.54C366.55 31.936 328.86 0 271.28 0c-61.607 0-58.093 94.933-71.76 108.6-22.747 22.747-49.615 66.447-68.76 83.4H32c-17.673 0-32 14.327-32 32v240c0 17.673 14.327 32 32 32h64c14.893 0 27.408-10.174 30.978-23.95 44.509 1.001 75.06 39.94 177.802 39.94 7.22 0 15.22.01 22.22.01 77.117 0 111.986-39.423 112.94-95.33 13.319-18.425 20.299-43.122 17.34-66.99 9.854-18.452 13.664-40.343 8.99-62.99zm-61.75 53.83c12.56 21.13 1.26 49.41-13.94 57.57 7.7 48.78-17.608 65.9-53.12 65.9h-37.82c-71.639 0-118.029-37.82-171.64-37.82V240h10.92c28.36 0 67.98-70.89 94.54-97.46 28.36-28.36 18.91-75.63 37.82-94.54 47.27 0 47.27 32.98 47.27 56.73 0 39.17-28.36 56.72-28.36 94.54h103.99c21.11 0 37.73 18.91 37.82 37.82.09 18.9-12.82 37.81-22.27 37.81 13.489 14.555 16.371 45.236-5.21 65.62zM88 432c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <!--Row #3-->
+            <div class="row mb-4">
+                <div class="col-10">
+                    <div class="media text-right">
+                        <img class="news__img align-self-stretch ml-1 rounded" src="./images/news.jpg" alt="news">
+                        <div class="media-body">
+                            <h5 class="mt-2 mb-4">بطولة الأمم الأفريقية</h5>
+                            <div class="d-flex justify-content-around">
+                                <div class="news__info px-1">مع شيماء</div>
+                                <div class="news__info px-1">30 اكتوبر 2020</div>
+                                <div class="news__info px-1">30 مشاهدة</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 d-flex">
+                    <svg class="news__like text-white my-auto" aria-hidden="true" focusable="false" data-prefix="far"
+                        data-icon="thumbs-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M466.27 286.69C475.04 271.84 480 256 480 236.85c0-44.015-37.218-85.58-85.82-85.58H357.7c4.92-12.81 8.85-28.13 8.85-46.54C366.55 31.936 328.86 0 271.28 0c-61.607 0-58.093 94.933-71.76 108.6-22.747 22.747-49.615 66.447-68.76 83.4H32c-17.673 0-32 14.327-32 32v240c0 17.673 14.327 32 32 32h64c14.893 0 27.408-10.174 30.978-23.95 44.509 1.001 75.06 39.94 177.802 39.94 7.22 0 15.22.01 22.22.01 77.117 0 111.986-39.423 112.94-95.33 13.319-18.425 20.299-43.122 17.34-66.99 9.854-18.452 13.664-40.343 8.99-62.99zm-61.75 53.83c12.56 21.13 1.26 49.41-13.94 57.57 7.7 48.78-17.608 65.9-53.12 65.9h-37.82c-71.639 0-118.029-37.82-171.64-37.82V240h10.92c28.36 0 67.98-70.89 94.54-97.46 28.36-28.36 18.91-75.63 37.82-94.54 47.27 0 47.27 32.98 47.27 56.73 0 39.17-28.36 56.72-28.36 94.54h103.99c21.11 0 37.73 18.91 37.82 37.82.09 18.9-12.82 37.81-22.27 37.81 13.489 14.555 16.371 45.236-5.21 65.62zM88 432c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End news-->
+
+    <!--Start studio-->
+    <div class="studio mt-3">
+        <div class="container">
+            <!--Header-->
+            <header class="row mb-3">
+                <h2 class="col-6 h5 text-right font-weight-600">الاستوديو</h2>
+                <div class="col-6">
+                    <a class="champSlider__more text-decoration-none" href="#">المزيد</a>
+                </div>
+            </header>
+            <!--Carousel-->
+            <div class="owl-carousel" dir="ltr">
+                <div class="card" dir="rtl">
+                    <div class="card-img-top position-relative">
+                        <img class="w-100" src="./images/news.jpg" alt="image">
+                        <img class="studio__logo p-1" src="./images/etisalat_latest_logo.png" alt="Etisalat">
+                        <img class="studio__pause p-1" src="./images/pause-button.png" alt="Etisalat">
+                    </div>
+                    <div class="card-body px-1 py-1">
+                        <h5 class="card-title text-center h6 font-weight-normal">African nations</h5>
+                        <div class="d-flex text-right justify-content-between">
+                            <span class="studio__text">30 اكتوبر2020</span>
+                            <span class="studio__text">30 مشاهده</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" dir="rtl">
+                    <div class="card-img-top position-relative">
+                        <img class="w-100" src="./images/news.jpg" alt="image">
+                        <img class="studio__logo p-1" src="./images/etisalat_latest_logo.png" alt="Etisalat">
+                        <img class="studio__pause p-1" src="./images/pause-button.png" alt="Etisalat">
+                    </div>
+                    <div class="card-body px-1 py-1">
+                        <h5 class="card-title text-center h6 font-weight-normal">African nations</h5>
+                        <div class="d-flex text-right justify-content-between">
+                            <span class="studio__text">30 اكتوبر2020</span>
+                            <span class="studio__text">30 مشاهده</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" dir="rtl">
+                    <div class="card-img-top position-relative">
+                        <img class="w-100" src="./images/news.jpg" alt="image">
+                        <img class="studio__logo p-1" src="./images/etisalat_latest_logo.png" alt="Etisalat">
+                        <img class="studio__pause p-1" src="./images/pause-button.png" alt="Etisalat">
+                    </div>
+                    <div class="card-body px-1 py-1">
+                        <h5 class="card-title text-center h6 font-weight-normal">African nations</h5>
+                        <div class="d-flex text-right justify-content-between">
+                            <span class="studio__text">30 اكتوبر2020</span>
+                            <span class="studio__text">30 مشاهده</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End studio-->
+    
+
+    <!--Start mainNav-->
+    <div class="mainNav fixed-bottom">
+        <nav class="navbar navbar-light">
+            <!--More Links-->
+            <div class="collapse w-100" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto pl-4 pr-0 py-3">
+                    <li class="nav-item mb-3">
+                        <a class="nav-link d-flex align-items-center" href="#">
+                            <svg class="mainNav__icon ml-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-pie" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 544 512"><path fill="currentColor" d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z"></path></svg>
+                            <div>More</div>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a class="nav-link d-flex align-items-center" href="#">
+                            <svg class="mainNav__icon ml-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-pie" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 544 512"><path fill="currentColor" d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z"></path></svg>
+                            <div>More</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--Main Links-->
+            <ul class="navbar-nav flex-row align-items-center justify-content-between p-0 w-100 border-0">
+                <li class="nav-item text-center ml-2 active">
+                    <a class="nav-link" href="#">
+                        <svg class="mainNav__icon mb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg>
+                        <div>الرئيسية</div>
+                    </a>
+                </li>
+                <li class="nav-item text-center ml-2">
+                    <a class="nav-link" href="#">
+                        <svg class="mainNav__icon mb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"></path></svg>
+                        <div>النتائج</div>
+                    </a>
+                </li>
+                <li class="nav-item text-center ml-2">
+                    <a class="nav-link" href="#">
+                        <svg class="mainNav__icon mb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-pie" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 544 512"><path fill="currentColor" d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z"></path></svg>
+                        <div>الاستوديو</div>
+                    </a>
+                </li>
+                <li class="nav-item text-center ml-2">
+                    <a class="nav-link" href="#">
+                        <svg class="mainNav__icon mb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="microphone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M176 352c53.02 0 96-42.98 96-96V96c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96zm160-160h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16z"></path></svg>
+                        <div>الاخبار</div>
+                    </a>
+                </li>
+                <li class="nav-item text-center ml-2 d-flex">
+                    <button class="navbar-toggler my-auto border-0 p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg class="mainNav__icon mb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                        <div>المزيد</div>
+                    </button>
+                </li>
+            </ul>
+    
+        </nav>
+    </div>
+    <!--End mainNav-->
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyD4PzpMmAUPO-Zi1pVayR3QFPXy9o05yGc",
+        authDomain: "etisalat-task-2.firebaseapp.com",
+        projectId: "etisalat-task-2",
+        storageBucket: "etisalat-task-2.appspot.com",
+        messagingSenderId: "574042627817",
+        appId: "1:574042627817:web:f39699c379165e472c5a78",
+        measurementId: "G-K7W2BEGBED"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+</body>
+
+</html>
