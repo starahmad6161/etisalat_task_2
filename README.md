@@ -3,7 +3,7 @@
 
 https://starahmad6161.github.io/etisalat_task_2/
 
-## firebase name
+## firebase project name
 etisalat-task-2 (etisalat-task-2)
 
 
